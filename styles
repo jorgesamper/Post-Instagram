@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(225, 225, 225);
+}
+
+.card{
+    position: relative;
+    width: 360px;
+    min-height: 400px;
+    background: rgb(255, 255, 255);
+    box-shadow: 15px 15px 60px red(0, 0 ,0 ,0.15);
+    padding: 20px;
+
+}
+
+.card .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .top .userDetails{
+    display: flex;
+    align-items: center;
+}
+
+.card .top .userDetails .profile_img {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.profile_img{
+    width: 36px;
+    height: 36px;
+}
+
+.fa-brands{
+    height: 0;
+    width: 0;
+    padding: 4px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin: 10px 0 15px;
+  }
+
+.card .top .userDetails h3{
+    font-size: 16px;
+    color: rgb(46, 46, 46);
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.card .top .userDetails h3 span{
+    font-size: 0.75rem;
+}
+
+.dot{
+    transform: scale(1.1);
+    cursor: pointer;
+    justify-content:flex-end;
+}
+
+.actionsBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.actionsBtns img{
+    max-width: 24px;
+    cursor: pointer;
+}
+
+.actionsBtns .left{
+    margin-right: 8px;
+
+}
+
+.likes{
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(46, 46, 46);
+}
+
+.message{
+    font-weight: 400;
+    margin-top: 5px;
+    color:rgb(67, 67, 67);
+    line-height: 1.5rem;
+
+}
+
+.message b{
+    color:rgb(46, 46, 46);
+
+}
+
+.message span{
+    color: rgb(43, 93, 255);
+}
+
+.comments{
+    margin-top: 10px;
+    font-weight: 400;
+    color: rgb(154, 154, 154);
+}
+
+.addComments{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.addComments .userImg{
+    position: relative;
+    min-width:30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.text {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color:  rgb(46, 46, 46);
+}
+
+.text::placeholder{
+    color: rgb(128, 128, 128);
+}
+
+.postTime{
+    margin-top: 10px;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+}
+
+.fa-solid{
+    background-color: rgb(199, 199, 199);
+    border-radius: 50%;
+    padding: 5px;
+}
+
